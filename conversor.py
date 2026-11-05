@@ -1,29 +1,28 @@
-# !/ usr / bin / env python3
-
-
-if __name__ == " __main__ ":
-
-    print (" Converter unidades \n")
-    print ("(1) Unidades metricas")
-    print ("(2) Unidades volumetricas ")
-    op1 = int( input ("> "))
-
-    if op1 == 1:
-        print("(1) m ->km")
-        print("(2) km ->m")
-        op2 = int ( input ("> "))
-
-
-        if op2 == 1:
-            x = float ( input ("m = "))
-            print (f"km = {x /1000} ")
-
-        else :
-            x = float ( input ("km = "))
-            print (f"m = {x *1000} ")
-
-    elif op1 == 2:
-        print (" Por implementar ")
-        
-    else :
-        print ("Opç ão incorreta ")
+#!/usr/bin/env python3
+if __name__ == "__main__":
+ 
+    print("Conversor de unidades")
+    print("a) m -> km")
+    print("b) m -> cm")
+    print("c) cm -> m")
+    print("d) m -> milhas")
+    print("e) milhas -> m")
+    opcao = input("> ")
+    if opcao == "a":
+        m = float(input("m = "))
+        print(f"{m} m = {m/1000} km")
+    elif opcao == "b":
+        m = float(input("m = "))
+        print(f"{m} m = {m*100} cm")
+    
+    elif opcao == "c":
+        cm = float(input("cm = "))
+        print(f"{cm} cm = {cm/100} m")
+    elif opcao == "d":
+        m = float(input("m = "))
+        print(f"{m} m = {m/1609.34} milhas")
+    elif opcao == "e":
+        milhas = float(input("milhas = "))
+        print(f"{milhas} milhas = {milhas*1609.34} m")
+    else:
+        print("Opção inválida")
