@@ -5,8 +5,8 @@ if __name__ == "__main__":
     print("a) m -> km")
     print("b) m -> cm")
     print("c) cm -> m")
-    #print("d) m -> milhas")
-   # print("e) milhas -> m")
+    print("d) m -> milhas")
+    print("e) milhas -> m")
     opcao = input("> ")
     if opcao == "a":
         m = float(input("m = "))
@@ -18,10 +18,10 @@ if __name__ == "__main__":
     elif opcao == "c":
         cm = float(input("cm = "))
         print(f"{cm} cm = {cm/100} m")
-    #elif opcao == "d":
+    elif opcao == "d":
         m = float(input("m = "))
         print(f"{m} m = {m/1609.34} milhas")
-    #elif opcao == "e":
+    elif opcao == "e":
         milhas = float(input("milhas = "))
         print(f"{milhas} milhas = {milhas*1609.34} m")
     else:
