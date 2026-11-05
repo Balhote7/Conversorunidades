@@ -24,5 +24,6 @@ if __name__ == "__main__":
     elif opcao == "e":
         hectares = float(input("hectares = "))
         print(f"{hectares} hectares = {hectares*10000} m2")
+    
     else:
         print("Opção inválida")
