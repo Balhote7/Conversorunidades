@@ -1,29 +1,28 @@
-# !/ usr / bin / env python3
+#!/usr/bin/env python3
+if __name__ == "__main__":
+    print("Conversor de unidades")
+    print("a) m -> km")
+    print("b) l -> hl")
+    print("c) hl -> l")
+    print("d) m2 -> hectares")
+    print("e) hectares -> m2")
 
+    opcao = input("> ")
 
-if __name__ == " __main__ ":
-
-    print (" Converter unidades \n")
-    print ("(1) Unidades metricas")
-    print ("(2) Unidades volumetricas ")
-    op1 = int( input ("> "))
-
-    if op1 == 1:
-        print("(1) m ->km")
-        print("(2) km ->m")
-        op2 = int ( input ("> "))
-
-
-        if op2 == 1:
-            x = float ( input ("m = "))
-            print (f"km = {x /1000} ")
-
-        else :
-            x = float ( input ("km = "))
-            print (f"m = {x *1000} ")
-
-    elif op1 == 2:
-        print (" Por implementar ")
-        
-    else :
-        print ("Opç ão incorreta ")
+if opcao == "a":
+    m = float(input("m = "))
+    print(f"{m} m = {m/1000} km")
+elif opcao == "b":
+    litros = float(input("l = "))
+    print(f"{litros} l = {litros/100} hl")
+elif opcao == "c":
+    hl = float(input("hl = "))
+    print(f"{hl} hl = {hl*100} l")
+elif opcao == "d":
+    m2 = float(input("m2 = "))
+    print(f"{m2} m2 = {m2/10000} hectares")
+elif opcao == "e":
+    hectares = float(input("hectares = "))
+    print(f"{hectares} hectares = {hectares*10000} m2")
+else:
+    print("Opção inválida")
